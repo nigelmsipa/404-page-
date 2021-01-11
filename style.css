@@ -1,0 +1,138 @@
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Space+Mono&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: 'Space Mono', monospace;
+}
+/* layout */
+.grid-container {
+  height: 100vh;
+  padding: 0.85em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(auto));
+  grid-auto-rows: repeat(auto-fill, minmax(auto));
+  grid-gap: 10px;
+  grid-template-areas:
+    'header'
+    'section-one'
+    'section-two'
+    'footer';
+}
+/* header styles */
+.header {
+  grid-area: header;
+
+  color: #333;
+}
+
+.header-text {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.title {
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+/* main */
+.section-one {
+  grid-area: section-one;
+
+  display: flex;
+  justify-content: center;
+}
+img {
+  height: 30rem;
+}
+.section-two {
+  grid-area: section-two;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.message-title {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.message-main {
+  font-family: 'Space Mono';
+  font-style: normal;
+
+  font-size: 1em;
+}
+button {
+  background: #333333;
+  color: white;
+  height: 3em;
+}
+/* footer */
+
+.footer {
+  grid-area: footer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-text {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: auto;
+}
+
+/* Responsiveness: */
+
+@media (min-width: 768px) {
+  /* layout */
+  .grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      'header header'
+      'section-one section-two'
+      'footer footer';
+  }
+  /* header styles */
+  /* main */
+  .message-title {
+    width: 85%;
+  }
+  .section-two {
+    grid-area: section-two;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .message-main {
+    font-family: 'Space Mono';
+    font-style: normal;
+
+    font-size: 1em;
+    width: 65%;
+    margin-top: 10px;
+  }
+  .button {
+    margin-top: 10px;
+    font-family: 'Space Mono';
+    font-style: normal;
+  }
+  /* footer */
+}

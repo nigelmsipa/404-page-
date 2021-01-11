@@ -1,6 +1,8 @@
+<!-- @format -->
+
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">{404 Not Found}</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -41,8 +43,11 @@
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
+
 - What was your experience?
+<!-- This was suprisingly hard for me. I usually watch a lot of tutorials but trying to build something this simple without help was suprisingly a challange.  -->
 - What have you learned/improved?
+<!-- I am going to spend more time doing small projects and less time watching tutorials. -->
 - Your wisdom? :)
 
 ### Built With
@@ -58,7 +63,6 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY) was to build an application to complete the given user stories.
-
 
 ## Acknowledgements
 
